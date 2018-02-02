@@ -14,13 +14,11 @@ const loadState = {
         game.load.setPreloadSprite(progressBar);
         
         //load assets
-        game.load.image('background', 'assets/background.png');
         game.load.image('sky', 'assets/layer-1-sky.png');
         game.load.image('mid', 'assets/layer-2.png');
         game.load.spritesheet('player', 'assets/player2.png',20,20);
         game.load.image('floor', 'assets/wallHorizontal.png');
         game.load.image('enemy', 'assets/enemy.png');
-        game.load.image('wall', 'assets/wallVertical.png');
         game.load.image('pixel', 'assets/pixel.png');
         
         // load sound
