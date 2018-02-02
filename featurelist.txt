@@ -1,0 +1,30 @@
+
+- core features (essential)
+
+--Hold jump to jump higher(x)(could make better)
+-- variable obstacle height(x)
+--score system (clearing obsticles)(X)
+
+- game quality features
+
+-- scrolling background(x)
+    - find background sprites(x)
+-- basic walk cycle(x)
+-death animation(x)
+
+--escalating difficulty (based on score)(x)
+-- Main Menu(partial, make it nicer)
+-- game over(x)
+-- high score
+
+--mobile compatability(x)
+
+-sound effects
+    - jump
+    - death
+    - clear an obsticle
+-music (started writing)
+
+-bonus/nice to have
+
+-background changes based on difficulty
