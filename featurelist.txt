@@ -27,4 +27,9 @@
 
 -bonus/nice to have
 
+-Leaderboard
+-- username input
+-- read/write leaderboard file (via ajax/http)
+-- host leaderboard online
+
 -background changes based on difficulty

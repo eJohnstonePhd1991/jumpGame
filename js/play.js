@@ -98,6 +98,21 @@ const playState = {
         // game over label
         let overText = 'You died! Your total score was: ' +this.score;
         
+        this.username = game.add.inputField(game.width/2, 300, {
+            font: '18px Arial',
+            fill: '#212121',
+            fontWeight: 'bold',
+            width: 150,
+            padding: 8,
+            borderWidth: 1,
+            borderColor: '#000',
+            borderRadius: 6,
+            placeHolder: 'AAA',
+            type: PhaserInput.InputType.text
+            });
+        
+        this.submit = game.add.button(game.width/2 + 300, 300,'enemy', this.submitName, this);
+        
         if (game.device.desktop) {
             overText += '\n Press up to restart'; 
         }
@@ -116,6 +131,16 @@ const playState = {
         };
         
         
+    },
+    
+    submitName: function() {
+        var name = "Your username is " + (this.username.value ? this.username.value : "John");
+        console.log(name);
+        this.username.destroy();
+        this.submit.destroy();
+        
+        
+        const userName = game.add.text(game.width/2, 400, name, {font: '30px Arial', fill: '#ffffff', boundsAlignH: "center"})
     },
     
     startMenu: function() {
