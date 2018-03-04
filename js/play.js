@@ -1,5 +1,7 @@
 const playState = {
     create: function() {
+        // fps for debugging
+        game.time.advancedTiming = true;
         
         this.gameSpeed = 1;
          // parallax background
@@ -187,6 +189,7 @@ const playState = {
         game.physics.arcade.overlap(this.player, this.enemies, this.playerDie, null, this);
         this.movePlayer();
         
+        game.debug.text(game.time.fps, 2, 14, "#00ff00");
         // updates score if player passes obsticle
         // also spawns new enemy when old enemy has passed halfway
         if (this.player.alive == true) {
