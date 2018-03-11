@@ -27,7 +27,7 @@ const loadState = {
         game.load.audio('dead', ['assets/dead.ogg', 'assets/dead.mp3']);
         
         //load packages
-        game.add.plugin(PhaserInput.Plugin);
+
     },
     
     create: function() {

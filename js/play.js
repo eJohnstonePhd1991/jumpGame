@@ -99,22 +99,7 @@ const playState = {
         this.scoreLabel.visible = false;
         // game over label
         let overText = 'You died! Your total score was: ' +this.score;
-        
-        this.username = game.add.inputField(game.width/2, 300, {
-            font: '18px Arial',
-            fill: '#212121',
-            fontWeight: 'bold',
-            width: 150,
-            padding: 8,
-            borderWidth: 1,
-            borderColor: '#000',
-            borderRadius: 6,
-            placeHolder: 'AAA',
-            type: PhaserInput.InputType.text
-            });
-        
-        this.submit = game.add.button(game.width/2 + 300, 300,'enemy', this.submitName, this);
-        
+            
         if (game.device.desktop) {
             overText += '\n Press up to restart'; 
         }
